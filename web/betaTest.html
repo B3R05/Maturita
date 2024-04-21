@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+        <script src="js.js"></script>
+        <link rel="shortcut icon" href="img/B2logo.svg" type="image/x-icon">
+        <title>B² Studio</title>
+    </head>
+<body>
+    <section id="content-hide">
+        <div class="container-login">
+            <div class="login-box">
+                <h2 class="text-center pb-5">Přihlášení Beta-Testera</h2>
+                <h3>Username:</h3>
+                <input type="text" name="" id="lUser">
+                <h3>Heslo:</h3>
+                <input type="password" name="" id="lPass">
+                <input type="button" value="Přihlásit" id="lLog" onclick="login()">
+                <a href="index.html"><input type="button" value="Zpět" id="lBack"></a>
+            </div>
+            <footer class="text-center pt-5 pb-3 foo">
+                <p>&copy; Copyright B na Druhou studio, All rights reserved 2024</p>
+            </footer>
+        </div>
+    </section>
+
+
+
+    <section id="content-show">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="img/B2logo.svg" alt=""></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responzivnimenu">
+                    <span><i class="fa-solid fa-list" style="color: #f3f3f3; font-size: 2rem"></i></span>
+                </button>
+                <div id="responzivnimenu" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="#pravidla" class="nav-link">Pravidla</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#odkaz" class="nav-link">Odkaz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#kontakty" class="nav-link">Kontakty</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!--Uvod-->
+        <div class="uvod container-fluid padding d-flex p-0">
+            <div class="uvod-text col-md-8 d-flex align-items-center justify-content-center p-0">
+                <div class="w-100 container-fluid d-flex flex-column justify-content-center px-md-5">
+                    <h1 class="mb-5">Sekce pro Beta-Testery</h1>
+                    <p class="mb-5">Vítej. Díky tobě se naše hra neustále zlepšuje. A za to ti děkujeme!</p>
+                </div>
+            </div>
+            <div class="uvod-img col-md-4 d-none d-md-block p-0"></div>
+        </div>
+
+        <!--pravidla-->
+        <div id="pravidla"></div>
+        <div class="pravidla reveal">
+            <h1 class="text-center pt-5">PRAVIDLA</h1>
+            <ul class="text-center">
+                <li class="pt-5">
+                    1. Zákaz zveřejňování citlivých informací
+                </li>
+                <li>
+                    2. Chovat se zdvořile
+                </li>
+                <li>
+                    3. Pravidelně dávat zpětnou vazbu
+                </li>
+                <li>
+                    4. Nahrávání pouze za účelem zobrazení bugu
+                </li>
+                <li>
+                    5. Nezneužívání beta přístupu
+                </li>
+                <li class="pt-5">
+                    Jakékoliv porušení pravidel vede k okamžitému zrušení role Beta-Testera
+                </li>
+                <li  class="pb-5">
+                    Pokračováním níže souhlasíte s výše uvedenými pravidly.
+                </li>
+            </ul>
+        </div>
+
+        <!--Download-->
+        <div id="odkaz"></div>
+        <div class="odkaz pb-5">
+            <div class="container-odkaz pb-5">
+                <h1 class="text-center pt-5 pb-5">Odkaz</h1>
+                <div class="reveal">
+                    <div class="odkaz-img"></div>
+                    <div class="odkaz-text text-center pt-4 pb-4">
+                        <iframe frameborder="0" src="https://itch.io/embed/2648615?linkback=true&amp;bg_color=383D3B&amp;fg_color=EEE5E9&amp;link_color=DD00FF&amp;border_color=383D3B" width="100%" height="167"><a href="https://mousemysak.itch.io/mushroom-madness">Mushroom: Madness by Mousemysak</a></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<!--Kontakty-->
+<div class="kontakty" id="kontakty">
+    <div class="container-fluid padding">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center pt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.9518182736415!2d15.376956412310834!3d50.000239771390774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c38bb9c44dc3f%3A0x4f601ec25e9699bf!2sHabrkovice%2040%2C%20284%2001%20Z%C3%A1bo%C5%99%C3%AD%20nad%20Labem-Kutn%C3%A1%20Hora%201!5e1!3m2!1scs!2scz!4v1712911523280!5m2!1scs!2scz" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center pt-5">
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                     bnadruhous@gmail.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                     +420 734 219 093
+                </p>
+                <p>
+                    <i class="fa-solid fa-house"></i>
+                     Habrkovice 40, Zátiboří nad Labem
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center row pt-5">
+                <div class="col-xs-12 col-sm-6">
+                    <a href="https://www.youtube.com/channel/UCB8-3ac2kPaA4hcw0vyN-XA"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <a href="https://www.instagram.com/bnadruhou?igsh=MXE0MW5oczE4MDFxNQ=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <a href="https://steamcommunity.com/groups/bnadruhou"><i class="fa-brands fa-steam"></i></a>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <a href="https://itch.io/profile/mousemysak"><i class="fa-brands fa-itch-io"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 pt-5 text-center">
+                <h3>Majitel:</h3>
+                <h4>Aleš Bednár</h4>
+                <h3>Spolumajitel:</h3>
+                <h4>Michal Bednařík</h4>
+            </div>                    
+        </div>
+    </div>
+    <footer class="text-center pt-5 pb-3">
+        <p>&copy; Copyright B na Druhou studio, All rights reserved 2024</p>
+    </footer>
+</div>
+    </section>
+</body>
+</html>

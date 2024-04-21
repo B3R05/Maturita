@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+        <link rel="shortcut icon" href="img/B2logo.svg" type="image/x-icon">
+        <script src="js.js"></script>
+        <title>B² Studio</title>
+    </head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="img/B2logo.svg" alt=""></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responzivnimenu">
+                <span><i class="fa-solid fa-bars" style="color: #f3f3f3; font-size: 2rem"></i></span>
+            </button>
+            <div id="responzivnimenu" class="navbar-collapse collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Studio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tym" class="nav-link">Tým</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#informace" class="nav-link">Popis<span style="color: rgba(1, 3, 3, 0);">.</span>hry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#release" class="nav-link">Vydání</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontakty" class="nav-link">Kontakty</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="betaTest.html" class="nav-link">Beta<span style="color: rgba(1, 3, 3, 0);">.</span>testování</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Uvod-->
+    <div class="uvod container-fluid padding d-flex p-0">
+        <div class="uvod-text col-md-8 d-flex align-items-center justify-content-center p-0">
+            <div class="w-100 container-fluid d-flex flex-column justify-content-center px-md-5">
+                <h1 class="mb-5">B na druhou studio</h1>
+                <p class="mb-5">Jsme studio o dvou členech, které chce proniknout mezi světové špičky.</p>
+                <div class="ubt">
+                    <div class="buttons d-flex justify-content-end">
+                        <a href="#tym"><button id="btTym">TÝM</button></a>
+                        <a href="#informace"><button id="btHra">HRA</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uvod-img col-md-4 d-none d-md-block p-0"></div>
+    </div>
+
+
+    <!--Tym-->
+    <div id="tym"></div>
+    <div class="tym">
+        <h1 class="text-center mt-5 pt-5">Sestavení týmu</h1>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="tym-card my-4 reveal pt-5">
+                    <div class="container-fluid d-flex">
+                        <div class="tym-text col-md-8 d-flex align-items-center justify-content-center">
+                            <div class="container-fluid d-flex flex-column justify-content-center">
+                                <h2>Michal Bednařík</h2>
+                                <h3>Programátor a správce herního provozu</h3>
+                                <p class="mb-5">
+                                    Michal Bednařík je klíčovým členem týmu 
+                                    "B na druhou", který se specializuje na 
+                                    technickou stránku vývoje her a správu herního 
+                                    provozu. S jeho zkušenostmi v programování a 
+                                    vášní pro videohry přináší do týmu odbornost a 
+                                    úsilí o vytváření kvalitních herních zážitků pro hráče.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tym-img col-md-4 d-none d-md-block"></div>
+                    </div>
+                </div>                 
+                <div class="tym-card my-4 reveal">
+                    <div class="container-fluid d-flex">
+                        <div class="tym-img2 col-md-4 d-none d-md-block"></div>
+                        <div class="tym-text col-md-8 d-flex align-items-center justify-content-center">
+                            <div class="container-fluid d-flex flex-column justify-content-center">
+                                <h2>Aleš Bednár</h2>
+                                <h3>3D grafik a web designer</h3>
+                                <p class="mb-5">
+                                    Aleš Bednár je talentovaným 3D grafikem a web 
+                                    designérem, jehož kreativita a dovednosti přinášejí 
+                                    týmu "B na druhou" nejen vizuální excelenci, ale i 
+                                    funkční webové rozhraní. S jeho zkušenostmi a vášní 
+                                    pro design vytváří atraktivní herní prostředí a uživatelsky 
+                                    přívětivé webové stránky.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+    <!--Zkusenosti-->
+    <div class="zkusenosti pb-5">
+        <h1 class="text-center mt-5 pt-5">zkušenosti</h1>
+        <div class="container-fluid padding zkusenosti-text mt-5">
+            <p> Několikrát jsme se zapojili do různých Game-Jamů, 
+                ve kterých jsme si nevedli vůbec špatně a díky 
+                nim jsme práve tam kde teď jsem. Daly nám mnoho 
+                zkušeností a kolikrát jsme díky nim vytvořili i nové 
+                zajímavé prvky do našich her.
+            </p>
+            <p> Níže jsou k vidění hry vytvořené naším studiem. 
+                Jelikož jsme na toto všechno pouze 2 a studio existuje 
+                pouze necelé 2 roky, nemáme toho tolik za sebou. Nicméně 
+                i přesto se máme čím chlubit
+            </p>
+        </div>
+        <div class="zkusenosti-imgs d-flex justify-content-center mt-5">
+            <div class="zkusenosti-img reveal"></div>
+        </div>
+        <div class="zkusenosti-imgs d-flex justify-content-center mt-5">
+            <div class="zkusenosti-img2 reveal"></div>
+        </div>
+        <div class="zkusenosti-imgs d-flex justify-content-center mt-5">
+            <div class="zkusenosti-img3 reveal"></div>
+        </div>
+    </div>
+
+
+
+    <!--Informace-->
+    <div id="informace"></div>
+    <div class="informace">
+        <h1 class="text-center pt-5">informace o hře</h1>
+        <div class="container d-flex justify-content-center align-items-center info">
+            <div class="carousel w-80 reveal">
+                <div id="slides" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="info-card my-4 container-fluid">
+                                <div class="container-fluid d-flex">
+                                    <div class="info-text col-md-8 d-flex align-items-center justify-content-center">
+                                        <div class="container-fluid d-flex flex-column justify-content-center">
+                                            <h3>Základní informace</h3>
+                                            <p class="mb-5">
+                                                "Mushroom:Madness" je akční dobrodružná hra, která se 
+                                                odehrává ve světě, kde naši zemi napadly mimozemské houby,
+                                                které se chovají jako inteligentní tvorové podobní lidem.
+                                                Tyto agresivní houby vyvolaly chaos a zkázu ve světě, a 
+                                                na hráčích je, aby se postavili do čela odporu a zastavili je.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info-img col-md-4 d-none d-md-block"></div>
+                                </div>
+                            </div> 
+                        </div>      
+                        <div class="carousel-item">
+                            <div class="info-card my-4 container-fluid">
+                                <div class="container-fluid d-flex">
+                                    <div class="info-text col-md-8 d-flex align-items-center justify-content-center">
+                                        <div class="container-fluid d-flex flex-column justify-content-center">
+                                            <h3>Hratelnost</h3>
+                                            <p class="mb-5">
+                                                Hráči přebírají roli hrdiny, který se vydává na 
+                                                nebezpečnou cestu, aby odhalil tajemství zaútočení 
+                                                hub a zastavil je. Během hry hráči bojují s 
+                                                různými typy Houbínků, používají strategii, sbírají 
+                                                zázračné nápoje s názvem Příšera, aby přežili v nepřátelském prostředí.                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info-img1 col-md-4 d-none d-md-block"></div>
+                                </div>
+                            </div> 
+                        </div>  
+                        <div class="carousel-item">
+                            <div class="info-card my-4 container-fluid">
+                                <div class="container-fluid d-flex">
+                                    <div class="info-text col-md-8 d-flex align-items-center justify-content-center">
+                                        <div class="container-fluid d-flex flex-column justify-content-center">
+                                            <h3>Herní prvky</h3>
+                                            <p class="mb-5">
+                                                Rozmanité bojové situace: Hráči se utkávají s různými typy Houbínků, každý s jedinečnými schopnostmi a strategiemi. <br>
+                                                Průzkum a objevování: Hráči prozkoumávají rozsáhlý herní svět, hledají klíčové informace a stopy vedoucí k místu, kde vznikli Houbínci.
+                                            </p>                                        
+                                        </div>
+                                    </div>
+                                    <div class="info-img2 col-md-4 d-none d-md-block"></div>
+                                </div>
+                            </div> 
+                        </div>  
+                        <div class="carousel-item">
+                            <div class="info-card my-4 container-fluid">
+                                <div class="container-fluid d-flex">
+                                    <div class="info-text col-md-8 d-flex align-items-center justify-content-center">
+                                        <div class="container-fluid d-flex flex-column justify-content-center">
+                                            <h3>Cíl hry</h3>
+                                            <p class="mb-5">
+                                                Hlavním cílem hry je dostat se na místo, 
+                                                odkud přišli houby, a odhalit tajemství 
+                                                za jejich útokem. Hráči se musí postarat o 
+                                                to, aby zastavili invazi Houbínků a zachránili 
+                                                svět před jejich ničivou mocí.                                                
+                                            </p>                                        
+                                        </div>
+                                    </div>
+                                    <div class="info-img3 col-md-4 d-none d-md-block"></div>
+                                </div>
+                            </div> 
+                        </div>                                            
+                    </div>
+                    <a href="#slides" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#slides" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <ul class="carousel-indicators mt-4">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                        <li data-target="#slides" data-slide-to="2"></li>
+                        <li data-target="#slides" data-slide-to="3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Release hry-->
+    <div id="release"></div>
+    <div class="release pt-5 pb-5">
+        <h1 class="text-center mt-5">Release hry</h1>
+        <div class="release-text text-center mt-5 container-fluid">
+            Vydání hry Mushroom:Madness je plánován na 5.6.2024 na herní platformě
+            Steam. Pro nejaktuálnější informace z dění naší hry nás sledujte na
+            našich sociálních sítích, kde pravidelně vydáváme novinky.
+        </div>
+        <div class="container mt-5 reveal">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icon-text text-center">
+                        <a href="https://itch.io/profile/mousemysak"><i class="fa-brands fa-itch-io"></i></i></a>
+                        <p>Itch</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-text text-center">
+                        <a href="https://www.instagram.com/bnadruhou/"><i class="fa-brands fa-instagram"></i></a>
+                        <p>Instagram</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-text text-center">
+                        <a href="https://www.youtube.com/channel/UCB8-3ac2kPaA4hcw0vyN-XA"><i class="fa-brands fa-youtube"></i></a>
+                        <p>YouTube</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Countdown-->
+    <div class="jumbotron">
+        <div class="text-center">
+            <p id="Today">Today</p>
+            <h2>Hra vychází za</h2>
+            <p id="Countdown">Countdown</p> 
+        </div>
+    </div>
+    
+
+
+    <!--FAQ-->
+    <div class="faq">
+        <h1 class="text-center mt-5">FAQ</h1>
+        <div class="otazky container-fluid padding mt-5 mb-5">
+            <div class="reveal">
+                <h4 data-toggle="collapse" data-target="#prvni" class="mt-4">1. Mohu se stát Beta-Testerem?</h4>
+                <div id="prvni" class="collapse odpoved">
+                    Ano. Stačí nám napsat na e-mail. Dále Vám zašleme formulář. Pokud
+                    budete splňovat požadavky, stanete se našim Beta-Testerem.
+                </div>
+            </div>
+            <div class="reveal">
+                <h4 data-toggle="collapse" data-target="#druha"  class="mt-4">2. Mám nějaké výhody jakožto Beta-Tester?</h4>
+                <div id="druha" class="collapse odpoved">
+                    Ano. Pokud plníte své povinnosti Beta-Testera, dostáváte odměny.
+                    Ty mají podobu například našich her zdarma, nebo speciální
+                    kosmetické úpravy v našich hrách. Dále můžete hlasovat o tom,
+                    co by se mělo do her přidat / jakou hru vytvořit.
+                </div>
+            </div>
+            <div class="reveal">
+                <h4 data-toggle="collapse" data-target="#treti"  class="mt-4">3. Kde pořád bereme energii tvořit?</h4>
+                <div id="treti" class="collapse odpoved">
+                    Lidská stvoření většinou získávají energii díky spánku. 
+                    To je však pro naše potřeby málo.
+                    Z tohoto důvodu máme pravidelný příjem energetických nápojů
+                    Příšera, který nám pomáhá neustále pracovat bez sebemenší
+                    potřeby spánku.
+                </div>
+            </div>
+            <div class="reveal">
+                <h4 data-toggle="collapse" data-target="#ctvrta"  class="mt-4">4. Budeme mít dalšího člena týmu?</h4>
+                <div id="ctvrta" class="collapse odpoved">
+                    Nic není v životě lidském jisté. Ani to, jestli budeme
+                    mít dalšího člena týmu. Nicméně kvůli našemu jménu studia
+                    to je celkem problematické. Zatím nového člena nehledáme.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Kontakty-->
+    <div class="kontakty" id="kontakty">
+        <div class="container-fluid padding">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center pt-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.9518182736415!2d15.376956412310834!3d50.000239771390774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c38bb9c44dc3f%3A0x4f601ec25e9699bf!2sHabrkovice%2040%2C%20284%2001%20Z%C3%A1bo%C5%99%C3%AD%20nad%20Labem-Kutn%C3%A1%20Hora%201!5e1!3m2!1scs!2scz!4v1712911523280!5m2!1scs!2scz" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center pt-5">
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                         bnadruhous@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                         +420 734 219 093
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-house"></i>
+                         Habrkovice 40, Zátiboří nad Labem
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center row pt-5">
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="https://www.youtube.com/channel/UCB8-3ac2kPaA4hcw0vyN-XA"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="https://www.instagram.com/bnadruhou?igsh=MXE0MW5oczE4MDFxNQ=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="https://steamcommunity.com/groups/bnadruhou"><i class="fa-brands fa-steam"></i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="https://itch.io/profile/mousemysak"><i class="fa-brands fa-itch-io"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 pt-5 text-center">
+                    <h3>Majitel:</h3>
+                    <h4>Aleš Bednár</h4>
+                    <h3>Spolumajitel:</h3>
+                    <h4>Michal Bednařík</h4>
+                </div>                    
+            </div>
+        </div>
+        <footer class="text-center pt-5 pb-3">
+            <p>&copy; Copyright B na Druhou studio, All rights reserved 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

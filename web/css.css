@@ -1,0 +1,563 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    outline: none!important;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #383D3B!important;
+    font-family: "Inter", sans-serif!important;
+    color: #EEE5E9!important;
+}
+
+.reveal{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all .80s ease;
+}
+
+.reveal.actives{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.navbar {
+    background-color: #383D3B;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #EEE5E9;
+}
+
+.navbar li a {
+    color: #EEE5E9;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    margin: .5rem;
+}
+
+.navbar li a:hover{
+    color: #EEE5E9;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 0;
+    height: 2px;
+    background-color: #EEE5E9;
+    transition: width 0.4s ease
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.navbar img{
+    width: 50px;
+    margin: 0!important;
+    padding: 0!important;
+    color: red!important;
+}
+
+
+
+/***********         Úvodní část         *************/
+.uvod{
+    min-height: 91vh;
+    background-color: #770FBD;
+    font-weight: 500;
+}
+
+.uvod-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/houb.png);
+}
+
+h1{
+    font-weight: 900!important;
+    text-transform: uppercase;
+    font-size: 4rem!important;
+    overflow:hidden ;
+}
+
+#btTym, #btHra{
+    padding: .5rem 3rem;
+    font-weight: 700;
+    color: #EEE5E9;
+    border: 2px solid #DD00FF;
+    cursor: pointer;
+    margin: .5rem;
+    transition: .3s;
+}
+
+#btTym{
+    background-color: #DD00FF!important;  
+}
+
+#btTym:hover{
+    border: 2px solid #EEE5E9;
+    transition: .3s;
+}
+
+#btHra{
+    background-color: #770FBD;
+}
+
+#btHra:hover{
+    background-color: #DD00FF;
+    border: 2px solid #EEE5E9;
+    transition: .3s;
+}
+
+
+/***********         Tým          *************/
+
+.tym {
+    min-height: 100%;
+    background-color: #383D3B;
+}
+
+.tym-text{
+    padding: 2rem;
+    background-color: #770FBD;
+}
+
+.tym-card {
+    width: 90%;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+.tym-img, .tym-img2 {
+    background-image: url(img/michal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tym-img2{
+    background-image: url(img/ales.png);
+}
+
+.tym h2{
+    font-weight: 900!important;
+    font-size: 4rem!important;   
+}
+
+.tym h3{
+    color: #DD00FF;
+    font-weight: 400!important;
+    font-size: 1.4rem;
+}
+
+.tym p{
+    font-size: 1.1rem;
+    font-weight: 500!important;
+}
+
+.tym button{
+    padding: .5rem 3rem;
+    font-weight: 700;
+    color: #383D3B;
+    border: 2px solid #EEE5E9;
+    cursor: pointer;
+    margin: .5rem;
+    transition: .3s;
+    background-color: #EEE5E9;
+}
+
+.tym button:hover{
+    background-color: #DD00FF;
+    border: 2px solid #DD00FF;
+    color: #EEE5E9;
+    transition: .3s;
+}
+
+/***********         Zkušenosti         *************/
+.zkusenosti{
+    min-height: 100vh;
+    background-color: #770FBD;
+}
+
+.zkusenosti-text{
+    width: 70%!important;
+    font-size: 1.1rem;
+    font-weight: 500!important;
+}
+
+.zkusenosti-img,.zkusenosti-img2,.zkusenosti-img3{
+    background-image: url(img/zk.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 65%;   
+    filter: grayscale(1) blur(2px);
+    transition: 0.5s;
+}
+
+.zkusenosti-img2{
+    background-image: url(img/zk2.png);
+}
+
+.zkusenosti-img3{
+    background-image: url(img/zk3.png);
+}
+
+
+.zkusenosti-img:hover, .zkusenosti-img2:hover, .zkusenosti-img3:hover {
+    filter: none;
+}
+
+
+/***********         Informace         *************/
+.informace {
+    min-height: 80vh;
+    background-color: #383D3B;
+    font-weight: 500;
+}
+
+.info{
+    min-height: 50vh;
+    font-size: 1.1rem;
+    font-weight: 500!important;
+}
+
+.info-img, .info-img1, .info-img2, .info-img3{
+    background-image: url(img/houb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.info-img1{
+    background-image: url(img/img.png);
+}
+.info-img2{
+    background-image: url(img/img2.png);
+}
+.info-img3{
+    background-image: url(img/cilHry.gif);
+}
+
+.info-text{
+    background-color: #383D3B;
+}
+
+.info-card {
+    width: 80%;
+    min-height: 25vh;
+    overflow: hidden;
+}
+
+.info-card h3{
+    color: #DD00FF;
+    text-decoration: underline;
+}
+
+.carousel-control-prev{
+    margin-left: -4.5rem!important;
+}
+
+.carousel-control-next{
+    padding-left: 6rem!important;
+}
+
+
+
+
+/***********         Release hry         *************/
+.release{
+    min-height: 35vh;
+    font-weight: 500;
+    background-color: #770FBD;
+}
+
+.release-text{
+    width: 75%!important;
+    font-size: 1.1rem;
+    font-weight: 500!important;
+}
+
+.release .fa-itch-io, .release .fa-instagram, .release .fa-youtube{
+    font-size: 4rem!important;
+    padding-bottom: .8rem;
+    color: #EEE5E9;
+    transition: .3s;
+}
+
+.release .fa-itch-io:hover, .release .fa-instagram:hover, .release .fa-youtube:hover{
+    color: #383D3B;
+    transition: .3s;
+}
+
+
+.jumbotron{
+    margin-bottom: 0!important;
+    width: 100%!important;
+    border-radius: 0!important;
+    background-image: url(img/houb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.jumbotron p{
+    color: #DD00FF;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#Today{
+    margin-bottom: 0!important;
+}
+
+
+
+
+/***********         FAQ         *************/
+.faq{
+    min-height: 100%;
+    margin-bottom: 5rem;
+}
+
+.faq h4{
+    width: 100%;
+    background-color: #770FBD;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.faq h4:hover{
+    cursor: pointer;
+    background-color: #DD00FF;
+    transition: .3s;
+}
+
+.otazky{
+    width: 70%!important;
+}
+
+.odpoved{
+    background-color: #EEE5E9;
+    color: #383D3B;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+/***********         Kontakty         *************/
+.kontakty{
+    border-top: #EEE5E9 3px solid;
+    min-height: 50vh;
+    background-color: #770FBD;
+    font-weight: 500;
+}
+
+.kontakty .fa-house, .kontakty .fa-phone, .kontakty .fa-envelope{
+    font-size: 1.7rem;
+}
+
+.kontakty .fa-steam, .kontakty .fa-instagram, .kontakty .fa-youtube, .kontakty .fa-twitter, .kontakty .fa-itch-io{
+    font-size: 4rem!important;
+    padding-bottom: .8rem;
+    color: #EEE5E9;
+    transition: .3s;
+}
+
+.kontakty .fa-steam:hover, .kontakty .fa-instagram:hover, .kontakty .fa-youtube:hover, .kontakty .fa-twitter:hover, .kontakty .fa-itch-io:hover{
+    color: #383D3B;
+    transition: .3s;
+}
+
+.kontakty h3{
+    color: #DD00FF;
+    font-size: 1.4rem;
+}
+
+#lLog, #lBack{
+    padding: .5rem 3rem;
+    font-weight: 700;
+    color: #EEE5E9;
+    border: 2px solid #DD00FF;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #770FBD;
+}
+
+#lLog:hover, #lBack:hover{
+    background-color: #DD00FF;
+    border: 2px solid #EEE5E9;
+    transition: .3s;
+}
+
+
+
+
+
+/***********         Beta tester login       *************/
+
+.container-login{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box{
+    background-color: #770FBD;
+    padding: 2rem!important;
+    border: 3px solid #EEE5E9;
+}
+
+.login-box a:hover{
+    text-decoration: none;
+}
+
+#lUser, #lPass, #lLog, #lBack{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.login-box h2{
+    font-weight: 700;
+}
+
+.login-box h3{
+    font-size: 1.2rem;
+}
+
+.foo{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#content-hide{
+    display: block;
+}
+
+#content-show{
+    display: none;
+}
+
+/***********         Beta tester obsah       *************/
+
+/***********         Pravidla       *************/
+.pravidla ul{
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+}
+
+
+/***********         Odkaz       *************/
+.odkaz{
+    min-height: 90vh;
+    background-color: #770FBD;
+    display: flex;
+    justify-content: center;
+}
+
+.container-odkaz{
+    width: 70%!important;
+    height: 20vh!important;
+}
+
+.widget_container{
+    background-color: #383D3B!important;
+}
+
+.odkaz-text{
+    background-color: #383D3B;
+}
+
+.odkaz-img {
+    background-image: url(img/houb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%!important;
+    height: 40vh;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin: 0rem!important;
+        padding: 0!important;
+    }  
+}
+
+@media (max-width: 768px) {
+    .navbar li a:hover::after {
+        width: 10%;
+    }  
+}
+
+@media (max-width: 576px) {
+    h1{
+        font-size: 2.2rem!important;
+    }
+    
+    .tym h2{
+        font-size: 2rem!important;   
+    }
+    
+    .tym h3{
+        font-weight: 400!important;
+        font-size: 1.2rem;
+    }
+
+    .ubt .d-flex{
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: space-around;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .container-stahnout{
+        width: 100%!important;
+    }
+
+    .zkusenosti-img,.zkusenosti-img2,.zkusenosti-img3{
+        height: 500px;
+        width: 90%;
+    }
+}
